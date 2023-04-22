@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title ?? site:name }}</title>
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <div class="w-full fixed">
+                <div class="w-11/12 mx-auto flex justify-between items-center py-6">
+                  <div>
+                      <img class="w-32 h-16" src="/public/images/logo.svg" alt="">
+                  </div>
+                  <div>
+                      <ul class="flex flex-row items-center main-nav">
+                            <li>Over ons</li>
+                            <li>Werkwijze</li>
+                            <li>Behandelingen</li>
+                            <li>Contact</li>
+                      </ul>
+                  </div>
+                  <div>
+                      <p>Vrijblijvend kennismakingsgesprek?</p>
+                  </div>
+                </div>
+            </div>
+            {{ template_content }}
+        </div>
+        <script src="{{ mix src='/js/site.js' }}"></script>
+    </body>
+</html>
