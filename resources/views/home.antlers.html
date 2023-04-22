@@ -2,10 +2,10 @@
 <div class="header w-full h-screen bg-white bg-left-top bg-cover" style="background-image: url('/public/images/header-line.svg')">
     <div class="w-11/12 mx-auto h-full flex justify-start items-end pb-[4%]">
         <div>
-            <h1 class="text-6xl text-primary">Kindercoaching</h1>
-            <h2 class="text-xl text-primary">Met een goal</h2>
+            <h1 class="text-6xl text-primary">{{ header_title }}</h1>
+            <h2 class="text-xl text-primary">{{ header_subtitle }}</h2>
         </div>
-        <span class="header-shape bg-contain bg-center w-[33vw] h-[33vw] absolute right-[20%] bottom-[-9%] bg-no-repeat z-20" style="background-image: url('/public/images/shape.svg')"></span>
+        <span class="header-shape bg-contain bg-center w-[33vw] h-[33vw] absolute right-[20%] bottom-[-9%] bg-no-repeat z-20" style="background-image: url('/shapes/shape.svg')"></span>
     </div>
 </div>
 
@@ -14,20 +14,21 @@
     <div class="w-11/12 max-w-7xl mx-auto">
         <div class="grid grid-cols-2 gap">
                 <div>
-                    <h1 class="main-heading__primary"><?= $page->section_1_title(); ?></h1>
-                    <div class="main-content mt-5"><?= $page->section_1_content(); ?></div>
+                    <h1 class="main-heading__primary">{{ section_1_title }}</h1>
+                    <div class="main-content mt-5">{{ section_1_content }}</div>
                 </div>
                 <div class="relative">
-                <!-- <div class="section-1-line-1" style="background-image: url(/public/images/line.svg)"></div> -->
-                <?php if($image = $page->section_1_image_1()->toFile()): ?>
-                    <div class="w-3/5 h-[370px] ml-auto relative">
-                    <div class="w-full h-full relative bg-center bg-cover rounded-md z-30" style="background-image: url(<?= $image->url(); ?>)"></div>
-                    <div class="top-[-60%] w-full h-full bg-contain bg-center absolute bg-no-repeat z-10" style="background-image: url(/public/images/line.svg);"></div>
-                    </div>
-                <?php endif ?>
-                <?php if($image = $page->section_1_image_2()->toFile()): ?>
-                    <div class="w-3/5 h-[370px] bg-center bg-cover rounded-md transform -translate-y-16 translate-x-9 shadow-2xl shadow-primary/90 z-40 relative" style="background-image: url(<?= $image->url(); ?>)"></div>
-                <?php endif ?>
+                    <!-- <div class="section-1-line-1" style="background-image: url(/public/images/line.svg)"></div> -->
+                    {{ section_1_images_1 }}
+                        <div class="w-3/5 h-[370px] ml-auto relative">
+                        <div class="w-full h-full relative bg-center bg-cover rounded-md z-30" style="background-image: url({{ url }})"></div>
+                        <div class="top-[-60%] w-full h-full bg-contain bg-center absolute bg-no-repeat z-10" style="background-image: url(/public/images/line.svg);"></div>
+                        </div>
+                    {{ /section_1_images_1 }}
+
+                    {{ section_1_images_2 }}
+                        <div class="w-3/5 h-[370px] bg-center bg-cover rounded-md transform -translate-y-16 translate-x-9 shadow-2xl shadow-primary/90 z-40 relative" style="background-image: url({{ url }})"></div>
+                    {{ /section_1_images_2 }}
                 </div>
         </div>
     </div>

@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply font-sans font-normal bg-light;
+}
+
+// Global
+.main-nav {
+  @apply font-light space-x-4;
+
+  li {
+    @apply text-primary text-xl cursor-pointer hover:text-black;
+  }
+}
+
+.main-heading {
+  @apply text-3xl font-medium;
+
+  &__primary {
+    @extend .main-heading;
+    @apply text-primary;
+  }
+}
+
+.main-content {
+  p {
+    @apply font-light text-black text-base;
+  }
+}
+
+// home
+
+.section-1-line-1 {
+  @apply w-[500px] h-[500px] bg-contain bg-center bg-no-repeat absolute;
+  top: -200px;
+}
