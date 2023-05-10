@@ -1,0 +1,19 @@
+title: Settings
+data:
+  logo: logo.svg
+  logo_white: logo-white.svg
+  phone: '+31 12 34 56 78'
+  email: info@goalz-kindercoaching.nl
+  name: 'Gaby van Erkelens'
+  adres:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Berensteyn 6'
+        -
+          type: hardBreak
+        -
+          type: text
+          text: '3252CK Goedereede'

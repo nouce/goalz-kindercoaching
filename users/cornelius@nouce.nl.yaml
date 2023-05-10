@@ -2,3 +2,7 @@ super: true
 name: 'Cornelius van Erkelens'
 id: a474421d-951b-4c31-9d82-acd952f5335c
 password_hash: $2y$10$iwachwgcEChrkuMQ4QIyH.75hSIy2EGtU0tyY453shHwG/BcQiv0y
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

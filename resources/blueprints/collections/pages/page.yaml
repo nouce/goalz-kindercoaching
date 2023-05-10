@@ -8,6 +8,13 @@ sections:
         field:
           type: text
           required: true
+          input_type: text
+          antlers: false
+          display: Title
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
           validate:
             - required
       -
@@ -16,6 +23,21 @@ sections:
           display: Header
           type: section
           icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: header_image
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Header image'
+          type: assets
+          icon: assets
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -126,6 +148,207 @@ sections:
           display: 'Image 2'
           type: assets
           icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: section_2
+        field:
+          display: 'Section 2'
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: section_2_title
+        field:
+          input_type: text
+          antlers: false
+          display: Text
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: werkwijze
+        field:
+          collapse: false
+          previews: true
+          sets:
+            item:
+              display: item
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: content
+                  field:
+                    collapse: false
+                    always_show_set_button: false
+                    previews: true
+                    smart_typography: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    inline: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    remove_empty_nodes: false
+                    display: Content
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: Werkwijze
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: section_3
+        field:
+          display: 'Section 3'
+          type: section
+          icon: section
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: section_3_title
+        field:
+          input_type: text
+          antlers: false
+          display: Title
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: what_we_do
+        field:
+          collapse: false
+          previews: true
+          sets:
+            item:
+              display: Item
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: content
+                  field:
+                    collapse: false
+                    always_show_set_button: false
+                    previews: true
+                    smart_typography: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                    save_html: false
+                    inline: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    remove_empty_nodes: false
+                    display: Content
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                -
+                  handle: packages
+                  field:
+                    display: packages
+                    type: table
+                    icon: table
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+          display: 'What we do'
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: extra_message_1
+        field:
+          input_type: text
+          antlers: false
+          display: 'Extra message 1'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: extra_message_2
+        field:
+          input_type: text
+          antlers: false
+          display: 'Extra message 2'
+          type: text
+          icon: text
+          width: 50
           listable: hidden
           instructions_position: above
           visibility: visible

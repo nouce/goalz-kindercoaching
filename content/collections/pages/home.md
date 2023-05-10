@@ -16,7 +16,118 @@ section_1_content:
 section_1_image_1: adam-winger-7ff0iei80aq-unsplash.jpg
 section_1_image_2: kenny-eliason-1-aa2fadydc-unsplash.jpg
 updated_by: a474421d-951b-4c31-9d82-acd952f5335c
-updated_at: 1682151985
+updated_at: 1683213365
+section_2_title: Werkwijze
+werkwijze:
+  -
+    id: lgwitve8
+    title: 'Vrijblijvende kennismaking'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis massa, volutpat nec hendrerit sit amet, mollis ut quam. Phasellus sagittis ullamcorper libero vel consequat.'
+    type: item
+    enabled: true
+  -
+    id: lgwiubuo
+    title: 'Vrijblijvende kennismaking'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis massa, volutpat nec hendrerit sit amet, mollis ut quam. Phasellus sagittis ullamcorper libero vel consequat.'
+    type: item
+    enabled: true
+  -
+    id: lgwiuili
+    title: 'Vrijblijvende kennismaking'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis massa, volutpat nec hendrerit sit amet, mollis ut quam. Phasellus sagittis ullamcorper libero vel consequat.'
+    type: item
+    enabled: true
+section_3_title: 'Goalz kindercoaching is o.a inzetbaar voor'
+what_we_do:
+  -
+    id: lgwk6qe3
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis massa, volutpat nec hendrerit sit amet, mollis ut quam. Phasellus sagittis ullamcorper libero vel consequat. Fusce porttitor quam id justo sagittis, sed tincidunt mauris imperdiet. Ut viverra gravida orci, et semper metus feugiat ut. Nullam viverra, purus a faucibus fermentum, urna lacus semper erat, quis varius nibh mauris eget eros. Integer nec lorem id erat cursus pellentesque. Sed cursus arcu quis metus tempor imperdiet. Etiam porttitor nulla ac purus egestas vulputate. Integer laoreet elit eget orci vestibulum, a porttitor lacus feugiat. Vestibulum ac congue orci. Aliquam maximus tristique risus, eget commodo massa ultricies eget.'
+    packages:
+      -
+        cells:
+          - null
+          - 'Pakket A'
+          - 'Pakket B'
+          - 'Pakket C'
+      -
+        cells:
+          - Sessies
+          - '5'
+          - '10'
+          - '15'
+      -
+        cells:
+          - Tarief
+          - '290'
+          - '580'
+          - '840'
+    type: item
+    enabled: true
+    title: 'Kindercoaching aan huis'
+  -
+    id: lgwmvoka
+    title: 'Kindercoaching op school'
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis massa, volutpat nec hendrerit sit amet, mollis ut quam. Phasellus sagittis ullamcorper libero vel consequat. Fusce porttitor quam id justo sagittis, sed tincidunt mauris imperdiet. Ut viverra gravida orci, et semper metus feugiat ut. Nullam'
+    packages:
+      -
+        cells:
+          - null
+          - 'Pakket A'
+          - 'Pakket B'
+          - 'Pakket C'
+      -
+        cells:
+          - Sessies
+          - '5'
+          - '10'
+          - '15'
+    type: item
+    enabled: true
+  -
+    id: lgxlsox7
+    title: test
+    content:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis massa, volutpat nec hendrerit sit amet, mollis ut quam. Phasellus sagittis ullamcorper libero vel consequat. Fusce porttitor quam id justo sagittis, sed tincidunt mauris imperdiet. Ut viverra gravida orci, et semper metus feugiat ut. Nullam'
+    type: item
+    enabled: true
+extra_message_1: 'Elk pakket is inclusief  een gratis kennismaking van 20 minuten'
+extra_message_2: 'Voor extra sessies rekenen  wij €60 p/u'
+header_image: p4250283.JPG
 ---
 ## Welcome to your brand new Statamic site!
 

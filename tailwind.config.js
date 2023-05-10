@@ -1,13 +1,14 @@
 module.exports = {
   mode: 'jit',
-  purge: {
-    content: [
-      './resources/**/*.antlers.html',
-      './resources/**/*.blade.php',
-      './resources/**/*.vue',
-      './content/**/*.md'
-    ]
-  },
+  content: [
+    './resources/**/*.antlers.html',
+    './resources/**/*.blade.php',
+    './resources/**/*.vue',
+    './content/**/*.md'
+  ],
+  safelist: [
+    { pattern: /grid-cols-(1|2|3|4|5|6|7|8|9)/ }
+  ],
   important: false,
   theme: {
     screens: {
@@ -46,7 +47,10 @@ module.exports = {
         },
         colors: {
             primary: '#827855',
-            light: '#DADBD6'
+            secondary: '#BCB9A8',
+            dark: '#464338',
+            light: '#DADBD6',
+            'light-gray': '#DADBD6'
         },
         fontFamily: {
             'sans' : ['Josefin Sans', 'sans-serif']

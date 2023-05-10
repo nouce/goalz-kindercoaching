@@ -1,0 +1,77 @@
+<div class="w-full pb-16 pt-32  relative z-50 bg-light">
+     <div class="w-11/12 max-w-7xl mx-auto">
+          <div class="grid grid-cols-2 md:grid-cols-1">
+               <div>
+                    <h3 class="text-lg font-medium text-primary">{{ settings:name }}</h3>
+                    <span class="h-px bg-primary/30 w-52 block my-5"></span>
+                    <div class="font-light text-primary">{{ settings:adres }}</div>
+
+                    <ul class="mt-5">
+                         <li>
+                              <a class="flex justify-start items-center font-light text-primary hover:text-black" href="tel:{{ settings:phone }}">
+                                   <span class="mr-4 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20.92 20.92">
+                                             <path id="phone" d="M17,14l-2.9,1.9a15.7,15.7,0,0,1-6-6L10,7,8,2H4L2.1,3.9a20,20,0,0,0,18,18L22,20V16Z" transform="translate(-1.58 -1.5)" fill="none" stroke="#827855" stroke-miterlimit="10" stroke-width="1"/>
+                                        </svg>                                           
+                                   </span>
+                                   {{ settings:phone }}
+                              </a>
+                         </li>
+                         <li class="mt-3">
+                              <a class="flex justify-start items-center font-light text-primary" href="mail:{{ settings:email }}">
+                                   <span class="mr-4 inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 21 21">
+                                             <g id="at" transform="translate(-1.5 -1.5)">
+                                                  <circle id="Ellipse_3" data-name="Ellipse 3" cx="4" cy="4" r="4" transform="translate(8 8)" fill="none" stroke="#827855" stroke-width="1"/>
+                                                  <path id="Path_10" data-name="Path 10" d="M16,8v5a3,3,0,0,0,6,0V12A10,10,0,1,0,12,22a9.8,9.8,0,0,0,6.1-2.1" fill="none" stroke="#827855" stroke-width="1"/>
+                                             </g>
+                                        </svg>                                                                                           
+                                   </span>
+                                   {{ settings:email }}
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+               <div class="md:mt-5">
+                    <div class="contact-form" id="contact_form">
+                         {{ form:contact_formulier }}
+                              {{ if success }}
+                                   <div class="bg-green-300 text-white p-2">
+                                   {{ success }}
+                                   </div>
+                              {{ else }}
+                                   {{ if errors }}
+                                        <div class="bg-red-300 text-white p-2">
+                                             {{ errors }}
+                                                  {{ value }}<br>
+                                             {{ /errors }}
+                                        </div>
+                                   {{ /if }}
+                         
+                                   {{ fields }}
+                                        <div class="p-2">
+                                             <label>{{ display }}</label>
+                                             <div class="p-1">{{ field }}</div>
+                                             {{ if error }}
+                                                  <p class="text-gray-500">{{ error }}</p>
+                                             {{ /if }}
+                                        </div>
+                                   {{ /fields }}
+                         
+                                   <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                         
+                                   <button class="px-10 py-3 rounded-full bg-white flex justify-center submit-button" type="submit">
+                                        Verzenden
+                                        <span class="ml-3">
+                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                             </svg>
+                                        </span>
+                                   </button>
+                              {{ /if }}
+                         {{ /form:contact_formulier }}
+                    </div>
+               </div>
+          </div>
+     </div>
+ </div>
