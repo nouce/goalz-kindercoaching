@@ -1,0 +1,70 @@
+<!-- header -->
+<div class="header w-full h-screen relative" >
+    <div class="h-full w-full fixed inset-0 flex justify-center items-end z-10 header-image">
+        <div class="w-10/12 h-[80%] bg-cover bg-center rounded-tr-xl rounded-tl-xl" style="background-image: url({{ header_image }})">
+            <div class="w-full pl-16 md:pl-0 mx-auto h-full flex justify-start items-end pb-[4%] md:pb-[7%] z-50 relative">
+                <div class="header-title md:w-full md:flex md:justify-center md:flex-col">
+                    <h1 class="text-7xl md:text-4xl md:text-center text-white">{{ header_title }}</h1>
+                    <h2 class="text-2xl md:text-xl md:text-center text-white">{{ header_subtitle }}</h2>
+                </div>
+                <!-- <span class="header-shape bg-contain bg-center w-[33vw] h-[33vw] absolute right-[20%] bottom-[-9%] bg-no-repeat z-20 opacity-90" style="background-image: url('/assets/shapes/shape.svg')"></span> -->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="absolute inset-0 bg-gradient-to-b from-[#525252] to-transparent opacity-70 z-10"></div> -->
+    <!-- <div class="absolute inset-0 bg-left-top bg-cover w-full h-full z-20" style="background-image: url('/assets/shapes/header-line.svg')"></div> -->
+</div>
+
+<div class="content-wrapper w-full bg-light relative z-50">
+    <!-- Section 1 -->
+    <div class="w-full py-32 mt-16 relative">
+        <div class="w-11/12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-1 gap">
+                    <div>
+                        <h1 class="main-heading__primary">{{ section_1_title }}</h1>
+                        <div class="main-content mt-5">{{ section_1_content }}</div>
+                    </div>
+                    <div class="relative md:pt-6">
+                        <!-- <div class="section-1-line-1" style="background-image: url(/public/images/line.svg)"></div> -->
+                        <div class="w-3/5 md:w-4/5 h-[370px] md:transform md:translate-x-8 ml-auto relative">
+                            <div class="w-full h-full relative bg-center bg-cover rounded-md z-30 md:mt-10" style="background-image: url({{ section_1_image_1 }})"></div>
+                            <div class="top-[-60%] w-full h-full bg-contain bg-center absolute bg-no-repeat z-10 md:hidden" style="background-image: url(/public/images/line.svg);"></div>
+                        </div>
+
+                        <div class="w-3/5 md:w-4/5 h-[370px] bg-center bg-cover rounded-md transform -translate-y-16 translate-x-9 md:-translate-x-8 shadow-2xl shadow-primary/90 z-40 relative" style="background-image: url({{ section_1_image_2 }})"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="w-full py-24 mt-16 relative bg-cover bg-center bg-no-repeat" style="background-image: url(/assets/shapes/line-2.svg)">
+        <span class="w-[600px] h-[600px] absolute -left-10 top-[-250px] bg-contain bg-center bg-no-repeat opacity-25" style="background-image: url('/assets/shapes/shape.svg')"></span>
+        <div class="w-11/12 max-w-7xl mx-auto relative z-30">
+            <h1 class="main-heading__primary">{{ section_2_title }}</h1>
+            <div class="w-full flex flex-row justify-between items-center space-x-5 mt-10 md:flex-col md:space-x-0 md:space-y-4">
+                {{ werkwijze }}
+                    <div class="bg-secondary rounded relative px-5 pt-5 pb-14 werkwijze-item">
+                        <h2 class="font-medium text-white text-lg">{{ title }}</h2>
+                        <div class="bard text-white mt-4">{{ content }}</div>
+                        <span class="absolute right-5 bottom-5 text-lg font-bold text-white">{{ if index < 10 }}0{{/if}}{{ index + 1 }}.</span>
+                    </div>
+                {{ /werkwijze }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="w-full py-16 mt-16 relative">
+        <div class="w-11/12 max-w-7xl mx-auto relative z-30 bg-dark p-10 md:p-5 rounded-lg overflow-hidden">
+            <div class="<md:w-10/12 mx-auto md:px-5">
+                <h1 class="main-heading__primary text-center">{{ section_3_title }}</h1>
+                <what-we-do 
+                    :items="{{ what_we_do | to_json | entities }}" 
+                    :content="{{ page | to_json | entities }}"
+                ></what-we-do>
+            </div>
+        </div>
+    </div>
+
+</div>

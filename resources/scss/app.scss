@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply font-sans font-normal bg-light;
+}
+
+#app {
+  @apply overflow-x-hidden;
+}
+
+// Global
+.menubar {
+  z-index: 999;
+}
+.main-nav {
+  @apply font-light space-x-4;
+
+  li {
+    @apply text-primary text-xl cursor-pointer hover:text-black font-medium;
+  }
+}
+
+.main-heading {
+  @apply text-3xl font-medium;
+
+  &__primary {
+    @extend .main-heading;
+    @apply text-primary;
+  }
+}
+
+.main-content {
+  p {
+    @apply font-light text-black text-base;
+  }
+}
+
+// home
+
+.section-1-line-1 {
+  @apply w-[500px] h-[500px] bg-contain bg-center bg-no-repeat absolute;
+  top: -200px;
+}
+
+.tabs-menu {
+  .active {
+    @apply bg-light text-primary;
+  }
+}
+
+.wwd-tab {
+  @apply opacity-0 duration-300;
+}
+
+.wwd-tab.active {
+  @apply opacity-100;
+}
+
+.package-table {
+  .table-header {
+    @apply text-white font-semibold pb-3 mb-3 border-b border-light/50;
+  }
+
+  .table-body {
+    @apply font-light text-white mb-3;
+  }
+}
+
+// footer
+.contact-form {
+  label {
+    @apply text-primary mb-2;
+  }
+  input {
+    @apply px-0 pb-3 border-b border-t-0 border-r-0 border-l-0 border-primary text-black bg-transparent w-full mb-3;
+    &:focus-visible,
+    &:focus {
+      @apply border-t-0 border-r-0 border-l-0 ring-0 outline-none;
+    }
+  }
+
+  textarea {
+    @apply px-0 pb-3 border-b border-primary text-black bg-transparent w-full;
+
+    &:focus-visible,
+    &:focus {
+      @apply border-t-0 border-r-0 border-l-0 ring-0 outline-none;
+    }
+  }
+
+  .submit-button {
+    @apply duration-300 mt-4;
+    span {
+      @apply transform duration-300;
+    }
+
+    &:hover {
+      @apply text-white bg-primary;
+      span {
+        @apply translate-x-1.5;
+      }
+    }
+  }
+}
+
+// Responsive
+
+@screen md {
+  .menubar {
+    z-index: 999;
+  }
+
+  .nav-wrapper {
+    @apply fixed left-full top-0 h-full w-full bg-primary duration-300;
+
+    .inner-wrapper {
+      @apply w-full h-full relative flex flex-col justify-center items-center;
+
+      .mobile-nav-logo {
+        @apply top-5 absolute;
+      }
+      .menu-close-trigger {
+        @apply w-14 h-14 rounded-full bg-white fixed bottom-14 text-black flex justify-center items-center;
+      }
+    }
+
+    .main-nav {
+      @apply w-10/12 flex-col items-start space-x-0 space-y-3;
+      li {
+        @apply block text-white text-center w-full;
+      }
+    }
+  }
+
+  .nav-wrapper.active {
+    @apply left-0 #{!important};
+  }
+
+  // What we do
+
+  .wwd-menu-wrapper {
+    @apply w-full overflow-x-scroll h-[48px] relative;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    ul {
+      @apply absolute flex-row overflow-x-scroll left-0 z-50;
+
+      li {
+        @apply inline-block
+      }
+    }
+  }
+
+  .wwd-menu-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+
