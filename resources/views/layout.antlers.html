@@ -24,10 +24,10 @@
                                 </svg>                              
                             </span>
                             <ul class="flex flex-row items-center main-nav">
-                                <li>Over ons</li>
-                                <li>Werkwijze</li>
-                                <li>Behandelingen</li>
-                                <li>Contact</li>
+                                <li> <a href="#about">Over ons</a></li>
+                                <li> <a href="#werkwijze">Werkwijze</a> </li>
+                                <li> <a href="#behandelingen">Behandelingen</a> </li>
+                                <li> <a href="#contact">Contact</a> </li>
                             </ul>
                         </div>
                     </div>
@@ -40,6 +40,34 @@
                         </span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Floating contact element -->
+            <div class="fixed right-10 bottom-10 z-[999] flex flex-row justify-end items-center">
+                <ul class=" flex flex-row rounded-full bg-white px-6 py-3 transform translate-x-6 z-20 shadow-xl shadow-primary/15">
+                    <li>
+                         <a class="flex justify-start items-center font-light text-black hover:text-black" href="tel:{{ settings:phone }}">
+                              <span class="mr-4 inline-block">
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20.92 20.92">
+                                        <path id="phone" d="M17,14l-2.9,1.9a15.7,15.7,0,0,1-6-6L10,7,8,2H4L2.1,3.9a20,20,0,0,0,18,18L22,20V16Z" transform="translate(-1.58 -1.5)" fill="none" stroke="#827855" stroke-miterlimit="10" stroke-width="1"/>
+                                   </svg>                                           
+                              </span>
+                         </a>
+                    </li>
+                    <li class="ml-3">
+                         <a class="flex justify-start items-center font-light text-black" href="mail:{{ settings:email }}">
+                              <span class="mr-4 inline-block">
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 21 21">
+                                        <g id="at" transform="translate(-1.5 -1.5)">
+                                             <circle id="Ellipse_3" data-name="Ellipse 3" cx="4" cy="4" r="4" transform="translate(8 8)" fill="none" stroke="#827855" stroke-width="1"/>
+                                             <path id="Path_10" data-name="Path 10" d="M16,8v5a3,3,0,0,0,6,0V12A10,10,0,1,0,12,22a9.8,9.8,0,0,0,6.1-2.1" fill="none" stroke="#827855" stroke-width="1"/>
+                                        </g>
+                                   </svg>                                                                                           
+                              </span>
+                         </a>
+                    </li>
+               </ul>
+                <span class="w-20 h-20 rounded-full bg-cover bg-center relative z-30" style="background-image: url({{ settings:contact_image }});"></span>
             </div>
             {{ template_content }}
             {{ partial:partials/footer }}
