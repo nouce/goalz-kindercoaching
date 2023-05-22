@@ -71,36 +71,45 @@ body {
 
 // footer
 .contact-form {
-  label {
-    @apply text-primary mb-2;
-  }
-  input {
-    @apply px-0 pb-3 border-b border-t-0 border-r-0 border-l-0 border-primary text-black bg-transparent w-full mb-3;
-    &:focus-visible,
-    &:focus {
-      @apply border-t-0 border-r-0 border-l-0 ring-0 outline-none;
-    }
-  }
+  @apply mt-5;
+  
+  form {
 
-  textarea {
-    @apply px-0 pb-3 border-b border-primary text-black bg-transparent w-full;
-
-    &:focus-visible,
-    &:focus {
-      @apply border-t-0 border-r-0 border-l-0 ring-0 outline-none;
-    }
-  }
-
-  .submit-button {
-    @apply duration-300 mt-4;
-    span {
-      @apply transform duration-300;
+    > div {
+      @apply p-0;
     }
 
-    &:hover {
-      @apply text-white bg-primary;
+    label {
+      @apply text-primary mb-2;
+    }
+    input {
+      @apply px-0 pb-3 border-b border-t-0 border-r-0 border-l-0 border-primary text-black bg-transparent w-full mb-3;
+      &:focus-visible,
+      &:focus {
+        @apply border-t-0 border-r-0 border-l-0 ring-0 outline-none;
+      }
+    }
+  
+    textarea {
+      @apply px-0 pb-3 border-b border-primary text-black bg-transparent w-full;
+  
+      &:focus-visible,
+      &:focus {
+        @apply border-t-0 border-r-0 border-l-0 ring-0 outline-none;
+      }
+    }
+  
+    .submit-button {
+      @apply duration-300 mt-4;
       span {
-        @apply translate-x-1.5;
+        @apply transform duration-300;
+      }
+  
+      &:hover {
+        @apply text-white bg-primary;
+        span {
+          @apply translate-x-1.5;
+        }
       }
     }
   }
