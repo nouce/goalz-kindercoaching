@@ -16,7 +16,7 @@ section_1_content:
 section_1_image_1: p4250495.JPG
 section_1_image_2: foto-bank.jpg
 updated_by: a474421d-951b-4c31-9d82-acd952f5335c
-updated_at: 1684174907
+updated_at: 1684775233
 section_2_title: Werkwijze
 werkwijze:
   -
@@ -153,6 +153,20 @@ what_we_do:
 extra_message_1: 'Elk pakket is inclusief  een gratis kennismaking van 20 minuten'
 extra_message_2: 'Voor extra sessies rekenen  wij €60 p/u'
 header_image: p4250706.JPG
+section_1_imageimage: p4250495.JPG
+section_1_image_1_cropper:
+  freeform:
+    x: 0
+    'y': 404
+    width: 2590
+    height: 4204
+section_2_image_2: p4250283.JPG
+section_1_image_2_cropper:
+  freeform:
+    x: 498
+    'y': 0
+    width: 1550
+    height: 1039
 ---
 ## Welcome to your brand new Statamic site!
 

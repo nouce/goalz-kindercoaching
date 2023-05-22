@@ -133,6 +133,21 @@ sections:
           display: 'Image 1'
           type: assets
           icon: assets
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: section_1_image_1_cropper
+        field:
+          show_details: true
+          source: section_1_image_1
+          dimensions:
+            freeform: Freeform
+          display: 'Image 1 cropper'
+          type: image_cropper
+          icon: assets
+          width: 50
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -151,6 +166,21 @@ sections:
           listable: hidden
           instructions_position: above
           visibility: visible
+          width: 50
+      -
+        handle: section_1_image_2_cropper
+        field:
+          show_details: true
+          source: section_1_image_2
+          dimensions:
+            freeform: Freeform
+          display: 'Image 2 cropper'
+          type: image_cropper
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          width: 50
       -
         handle: section_2
         field:

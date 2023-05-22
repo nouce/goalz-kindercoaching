@@ -1,0 +1,30 @@
+title: 'Cropper image'
+fields:
+  -
+    handle: image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      max_files: 1
+      display: Image
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+  -
+    handle: cropped
+    field:
+      show_details: true
+      source: image
+      dimensions:
+        freeform: Freeform
+      display: Cropped
+      type: image_cropper
+      icon: assets
+      listable: hidden
+      instructions_position: above
+      visibility: visible

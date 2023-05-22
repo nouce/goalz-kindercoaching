@@ -13,9 +13,12 @@
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
+        "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
+        "league/glide": "^2.2",
+        "league/glide-laravel": "^1.0",
         "statamic/cms": "3.4.*",
-        "laravel/sanctum": "^2.14"
+        "tv2regionerne/statamic-image-cropper": "^0.3.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
